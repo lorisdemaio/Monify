@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # COME USARE IL PROGETTO:
 
 1) Importare il database su XAMPP: 
@@ -28,6 +27,3 @@
 
 - Infine per avviare il progetto nel terminale Front-End esegui il comando "npm run dev" e
   nel terminale Back-End "node ."
-=======
-
->>>>>>> 59ea2803950eb764a605cc276784120a2ca6baa9
