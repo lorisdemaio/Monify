@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+:root
+{
+    --colore1: #5b7abd;
+    --colore2: #568bfc50;
+    --bg: #080808;
+}
+
+::-webkit-scrollbar
+{
+  @apply h-2 w-[0.3rem];
+}
+
+::-webkit-scrollbar-track
+{
+  @apply bg-[var(--bg)];
+}
+
+::-webkit-scrollbar-thumb
+{
+  @apply bg-[var(--colore1)] rounded-full;
+}
+
+*
+{
+    @apply m-0 p-0 box-border;
+}
+
+html,body
+{
+    @apply bg-[var(--bg)] text-white overflow-x-hidden;
+}
+
+/* navbar */
+nav
+{
+    @apply fixed w-full top-0 justify-between items-center py-7 
+    md:px-20 px-4 backdrop-blur-2xl z-[999];
+}
+
+svg
+{
+    @apply text-white cursor-pointer;
+}
+
+.user
+{
+    @apply bg-[var(--colore2)] p-2 rounded-full
+}
+
+/* footer*/
+footer
+{
+    @apply bg-[var(--bg)] text-center text-gray-400 text-sm p-4
+    w-full;
+}
+
+/* section */
+section
+{
+    @apply md:pl-20 md:pr-20 pl-4 pr-4 relative z-[1];
+}
+
+.content
+{
+    @apply flex flex-col justify-center items-center 
+    w-full;
+}
+
+.content-left
+{
+    @apply flex flex-col justify-center items-start 
+    w-full;
+}
+
+.dashboard-wrapper
+{
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 w-full;
+}
+
+.dashboard-info, .dashboard-radar, .dashboard-goals
+{
+    @apply bg-zinc-800 p-4 rounded-xl w-full;  
+}
+
+.dashboard-radar
+{
+    @apply md:bg-[var(--bg)] flex justify-start items-center gap-2;
+}
+
+.radar-wrapper
+{
+    @apply md:bg-zinc-800 flex md:flex-col justify-center items-center gap-4 
+    md:p-4 rounded-xl;
+}
+
+.dashboard-goals
+{
+    @apply md:col-span-2 flex flex-col justify-center items-start gap-4 pt-5
+    w-full;
+}
+
+.goals-cards
+{
+    @apply flex justify-start items-center gap-4 p-2 mt-5 w-full overflow-x-scroll;
+}
+
+.goals-cards::-webkit-scrollbar
+{
+    @apply hidden md:block h-1 cursor-grab;
+}
+
+.settings-item
+{
+    @apply flex flex-row gap-2 mt-4 p-4 w-full cursor-pointer
+    border-b border-zinc-900 rounded-xl 
+    transition-all duration-300 hover:bg-zinc-900;
+}
+
+.settings-item > span
+{
+    @apply text-xl;
+}
+
+.settings-item:last-child
+{
+    @apply border-b-0
+}
+
+.radar
+{
+    @apply bg-zinc-900 flex flex-col p-4 gap-4 mb-4 w-full rounded-xl
+    shadow-2xl transition-all duration-300;
+}
+
+.importo
+{
+    @apply text-3xl font-bold
+}
+
+.data
+{
+    @apply text-zinc-400;
+}
+
+.loading
+{
+  @apply bg-[var(--bg)] fixed w-full min-h-dvh top-0 left-0 
+  flex justify-center items-center transition-all duration-300;
+}
+
+/* btns */
+.btn
+{
+    @apply bg-[var(--colore2)] text-white text-center font-bold py-2 px-4 
+    rounded-xl border-2 border-[var(--colore1)] cursor-pointer transition 
+    hover:bg-[var(--bg)] duration-300 ease-in-out;
+}
+
+.btn2
+{
+    @apply bg-black text-white text-center font-bold py-2 px-4 
+    rounded-xl cursor-pointer transition shadow-2xl hover:bg-[var(--bg)] 
+    duration-300 ease-in-out;
+}
+
+/* forms */
+form
+{
+    @apply flex flex-col p-4 gap-4;
+}
+
+input
+{
+    @apply mt-2 p-2 rounded-xl w-full bg-[var(--bg)] border border-gray-700 
+    text-white xl:text-xl focus:outline-none focus:border-[var(--colore1)]
+}
+
+/* banner */
+.banner
+{
+    @apply bg-white fixed w-[90%] min-h-[500px] left-[50%] 
+    translate-x-[-50%] translate-y-[-50%] flex flex-col justify-around items-center 
+    gap-4 p-4 rounded-xl transition-all duration-300 z-[999];
+}
