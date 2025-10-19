@@ -16,7 +16,7 @@
 - Una volta caricata la pagina di phpMyAdmin, clicca sulla scheda "Importa" nella barra 
   superiore.
 
-- Seleziona il file chordix.sql dalla cartella Database del progetto tuo e clicca su "Esegui" 
+- Seleziona il file monify.sql dalla cartella Database del progetto tuo e clicca su "Esegui" 
   per completare l'importazione del  database.
 
 
