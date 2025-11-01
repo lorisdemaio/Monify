@@ -8,6 +8,8 @@
 <img width="1866" height="892" alt="monify_6" src="https://github.com/user-attachments/assets/00b9fd7d-f86b-4839-bad4-43f51b0ba396" />
 
 # INTRODUZIONE
+# 💰 Monify  
+Un’app web per gestire entrate, uscite e obiettivi finanziari in modo semplice e intuitivo.
 
 ## Funzionalità principali:
   - Aggiungi saldo 💸
